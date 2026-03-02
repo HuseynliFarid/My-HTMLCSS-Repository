@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Master Səviyyə Testi</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mənim Super HTML Səhifəm</h1>
+        <nav>
+            <ul>
+                <li><a href="#form-bolmesi">Qeydiyyat</a></li>
+                <li><a href="#media-bolmesi">Media</a></li>
+                <li><a href="#cedvel-bolmesi">Məlumatlar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="media-bolmesi">
+        <h2>Media və Qrafika</h2>
+        <p>Aşağıda HTML5-in təqdim etdiyi video və şəkil imkanları var:</p>
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Nümunə şəkil">
+            <figcaption>Şəkil 1: Bu bir HTML şəkil elementidir.</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <section id="cedvel-bolmesi">
+        <h2>Məlumat Cədvəli</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>Vəzifə</th>
+                    <th>Bacarıq Səviyyəsi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ceyhun</td>
+                    <td>Front-end Developer</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Aysel</td>
+                    <td>UI/UX Designer</td>
+                    <td>90%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="form-bolmesi">
+        <h2>İstifadəçi Qeydiyyatı (Mürəkkəb Form)</h2>
+        <abbr title="Domasin">dns</abbr>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Şəxsi Məlumatlar</legend>
+                
+                <label for="name">Tam Adınız:</label>
+                <input type="text" id="name" name="name" placeholder="Məs: Əli Əliyev" required><br><br>
+
+                <label for="email">E-poçt:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="bday">Doğum Tarixi:</label>
+                <input type="date" id="bday" name="bday"><br><br>
+
+                <label for="range">HTML Bilik Səviyyəniz:</label>
+                <input type="range" id="range" min="0" max="100"><br><br>
+
+                <label>Cinsiniz:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Kişi</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Qadın</label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Məlumatları Göndər</button>
+            <button type="reset">Sıfırla</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 HTML Öyrənmə Prosesi</p>
+    </footer>
+
+</body>
+</html>
